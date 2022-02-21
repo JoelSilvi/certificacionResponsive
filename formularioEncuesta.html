@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Encuesta</title>
+</head>
+
+<body>
+  <h1 id="title">Formulario Encuesta</h1>
+  <p id="description">Gracias por responder nuestra encuesta</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">nombre</label>
+    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+    <br>
+    <label for="email" id="email-label">email</label>
+    <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+    <br>
+    <label for="numero" id="number-label">Número</label>
+    <input type="number" name="number" id="number" min="1" max="5" placeholder="Ingresa un número">
+    <br>
+    <select name="entidad" id="dropdown">
+      <option disabled selected value>Seleccione una opción</option>
+      <option value="natural">Persona Natural</option>
+      <option value="empresa">Empresa</option>
+      <option value="gobierno">Entidad Gubernamental</option>
+    </select>
+    <br>
+    <p>Recomendarías nuestro servicio</p>
+    <label>
+      <input type="radio" name="recomendacion" value="porsupuesto" checked> Porsupuesto
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="recomendacion" value="quizás"> Quizás
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="recomendacion" value="no"> Claro que no
+    </label>
+    <p>Indícanos las tecnologías que manejas</p>
+    <label>
+      <input type="checkbox" name="skills" value="HTML"> HTML
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="skills" value="CSS"> CSS
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="skills" value="GIT"> GIT
+    </label>
+    <br>
+    <p>Déjenos sus comentarios</p>
+    <textarea name="comentarios" id="comentarios" cols="60" rows="10" placeholder="Escriba sus comentarios"></textarea>
+    <br>
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
