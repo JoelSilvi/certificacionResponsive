@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Aterrizaje de Producto</title>
+</head>
+
+<style>
+  .logo img {
+    border-radius: 10px;
+    border: medium solid black;
+    justify-content: left;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header #nav-bar ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+    padding-right: 1em;
+    font-size: 26px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #cont1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #cont1 img {
+    border-radius: 10px;
+    border: medium solid black;
+  }
+
+  #cont2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #cont2 img {
+    border-radius: 10px;
+    border: medium solid black;
+  }
+
+  #cont3 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #cont3 img {
+    border-radius: 10px;
+    border: medium solid black;
+  }
+
+  #videoClass {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  #header .logo #header-img {
+    position: fixed;
+    top: 0;
+    display: flex;
+  }
+
+  #header #nav-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 0 420px;
+  }
+
+
+  @media screen and (min-width:768px) {
+    form {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+</style>
+
+<body>
+  <header id="header">
+    <div class="logo">
+      <img src="https://www.placeimg.com/200/50/tech" alt="logo" id="header-img">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#cont1" class="nav-link">Características</a></li>
+        <li><a href="#video" class="nav-link">Productos</a></li>
+        <li><a href="#form" class="nav-link">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br><br><br><br><br>
+
+  <div id="cont1">
+    <div class="ima">
+      <img src="https://www.placeimg.com/200/100/any" alt="icon1">
+    </div>
+    <div class="text">
+      <h2>Productos VIP</h2>
+      <p>Productos exclusivos</p>
+    </div>
+  </div>
+  <div id="cont2">
+    <div class="ima">
+      <img src="https://www.placeimg.com/200/100/tech" alt="icon2">
+    </div>
+    <div class="text">
+      <h2>Tecnología</h2>
+      <p>Productos tecnológicos</p>
+    </div>
+  </div>
+  <div id="cont3">
+    <div class="ima">
+      <img src="https://www.placeimg.com/200/100/arch" alt="icon3">
+    </div>
+    <div class="text">
+      <h2>Calidad</h2>
+      <p>Productos de calidad</p>
+    </div>
+  </div>
+
+  <br><br><br><br><br>
+  <div id="videoClass">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/B67wW112MaI"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <br><br><br><br><br>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input name="email" type="email" id="email" placeholder="Ingrese su email" required>
+    <input type="submit" id="submit" value="Enviar datos">
+  </form>
+
+
+
+
+</body>
+
+</html>
