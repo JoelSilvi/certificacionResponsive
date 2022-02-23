@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Técnica</title>
+</head>
+
+<style>
+  #general {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  #navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+  }
+
+  #navbar a {
+    display: block;
+    padding: 1em;
+  }
+
+  @media screen and (max-width:768px) {
+    #navbar {
+      display: flex;
+      top: 0;
+      width: 100%;
+      height: 20%;
+      border: 1em solid green;
+    }
+  }
+</style>
+
+<body>
+  <div id="general">
+    <div id="part1">
+      <nav id="navbar">
+        <header>Documentación técnica </header>
+        <a href="#JavaScript" class="nav-link">JavaScript</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#for" class="nav-link">for</a>
+        <a href="#while" class="nav-link">while</a>
+        <a href="#if" class="nav-link">if</a>
+      </nav>
+    </div>
+
+    <div id="part2">
+      <main id="main-doc">
+        <section id="JavaScript" class="main-section">
+          <header>JavaScript</header>
+          <p>JavaScript es un lenguaje de programación</p>
+          <p>Lo puedes usar para añadir características interactivas a tu sitio web</p>
+          <code>console.log("Hello Word");</code>
+          <ul>
+            <li>Lenguaje del lado del cliente </li>
+            <li>Lenguaje orientado a objetos</li>
+            <li>De tipado débil o no tipado</li>
+            <li>De alto nivel</li>
+            <li>Lenguaje interpretado</li>
+          </ul>
+          <br><br>
+        </section>
+        <section id="Variables" class="main-section">
+          <header>Variables</header>
+          <p>Las variables son la manera como los programadores le dan nombre a un valor</p>
+          <p>Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript</p>
+          <code>let x = 10;</code>
+          <br><br>
+        </section>
+        <section id="for" class="main-section">
+          <header>for</header>
+          <p>El bucle FOR se utiliza para repetir una o más instrucciones un determinado número de veces</p>
+          <p>De entre todos los bucles, el FOR se suele utilizar cuando sabemos seguro el número de veces que queremos
+            que
+            se ejecute</p>
+          <code>for (let x = 0; x < 9; x++) { console.log(x + " ");}</code>
+          <code>for (let y = 0; y > 3; y--) { console.log(y + " ");}</code>
+          <br><br>
+        </section>
+        <section id="while" class="main-section">
+          <header>while</header>
+          <p>La sentencia while crea un bucle que ejecuta una sentencia especificada</p>
+          <p>La condición se evalúa después de ejecutar la sentencia</p>
+        </section>
+        <code>while (n <=10) { console.log(n); n = n+1;}</code>
+        <br><br>
+        <section id="if" class="main-section">
+          <header>if</header>
+          <p>if es una estructura de control utilizada para tomar decisiones</p>
+          <p>Es un condicional que sirve para realizar unas u otras operaciones en función de una expresión</p>
+          <code>if (a > b){ console.log(a es el mayor) }</code>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
