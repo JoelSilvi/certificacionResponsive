@@ -23,10 +23,8 @@
   #navbar {
     position: sticky;
     top: 0;
-  }
-
-  #navbar a {
-    text-decoration: none;
+    background-color: white;
+    width: 100%;
   }
 
   li {
@@ -38,11 +36,26 @@
     border-radius: 10px;
   }
 
-  ul {
-    margin-left: 70%;
-    list-style-type: none;
+  nav li a {
+    display: grid;
+    flex-direction: row;
+    position: sticky;
+    border: 2px solid black;
+    padding: .5em 2.5em;
+    align-items: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
   }
 
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
 
   #welcome-section {
     height: 100vh;
@@ -67,47 +80,46 @@
     -webkit-text-stroke: 2px black;
   }
 
-@media screen and (max-width:576px) {
-  .project-tile{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width:576px) {
+    .project-tile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-}
 
-h2{
-  font-size: 3.5em;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: blueviolet;
-  margin: .5em;
-}
+  h2 {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    margin: .5em;
+  }
 
-#projects .project-tile a{
-  display: flex;
-  justify-content: center;
-  margin: 1.5em;
-  text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border: 2px solid green;
-  width: 30%;
-  margin: 1em auto;
-border-radius: 10px;
-font-size: 1.5em;
-}
+  #projects .project-tile a {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid green;
+    width: 30%;
+    margin: 1em auto;
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
 
-#profile-link{
-  display: flex;
-  justify-content: center;
-  margin: 1.5em;
-  text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border: 2px solid black;
-  width: 30%;
-  margin: 3em auto;
-border-radius: 10px;
-font-size: 1.5em;
-}
-
+  #profile-link {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    width: 30%;
+    margin: 3em auto;
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
 </style>
 
 <body>
@@ -123,7 +135,7 @@ font-size: 1.5em;
       <blockquote> Joel Aguilar </blockquote> <span> Front-End Developer </span>
     </h1>
   </section>
-  
+
   <section id="projects">
     <article class="project-tile">
       <h2>Mis proyectos</h2>
@@ -131,11 +143,27 @@ font-size: 1.5em;
       <a href="https://joelsilvi.github.io/inm">Sitio Web Inmobiliaria</a>
     </article>
   </section>
+  <br><br><br><br><br><br><br><br><br><br>
+  <section>
+    <article>
+      <h2>Mi GitHub personal de noob autodidacta</h2>
+      <a id="profile-link" href="https://www.github.com/joelsilvi" target="_blank">GitHub</a>
+    </article>
+  </section>
 
-  
-    <a id="profile-link" href="https://www.github.com/joelsilvi" target="_blank">GitHub</a>
-  
- 
+  <section>
+    <article>
+      <a href="#">
+        <h2>Al inicio</h2>
+      </a>
+    </article>
+  </section>
+
+
+
+
+
+
 </body>
 
 </html>
